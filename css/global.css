@@ -1,0 +1,40 @@
+
+body {
+    background: #fff;
+    font-family: Helvetica, sans-serif;
+    color: #212353;
+
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #4B5D68;
+    font-family: "Avenir";
+}
+
+button {
+    position: relative;
+    border: none;
+    font-family: "Avenir";
+
+}
+.polygon {
+    position: absolute;
+    right: 16%;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.paragraph {
+    font-family: "Avenir";
+    line-height: 30px;
+}
+
+.vector {
+    height: 12px;
+}
