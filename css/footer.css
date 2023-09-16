@@ -1,0 +1,47 @@
+.footer {
+    border-top: 2px solid #9C69E2;
+    margin-top: 100px;
+}
+.footer__general {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.learn__button {
+    border-radius: 50px;
+    background-color: #F063B8;
+    color: #fff;
+    width: 170px;
+    height: 60px;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer__links>ul {
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer__info__text {
+    width: 360px;
+    font-family: "Avenir";
+    line-height: 22px;
+    padding-left: 10px;
+}
+.group{
+    position: fixed;
+    bottom: 50px;
+    right:100px
+}

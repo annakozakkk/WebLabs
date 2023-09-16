@@ -1,0 +1,148 @@
+.info {
+    margin: 0 auto;
+    text-align: center;
+    width: 584px;
+}
+
+.features>.container {
+    margin-top: 160px;
+
+}
+
+.first__level {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.second__level {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.features__title {
+    padding: 0px 20px;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0
+}
+
+.features__paragraph {
+    line-height: 25px;
+    font-family: "Avenir";
+    font-size: 16px;
+    padding: 30px 20px 40px 20px;
+}
+
+.features__inner {
+    z-index:1 ;
+    margin-top: 60px;
+    display: flex;
+}
+
+.features__image {
+    margin-top: 50px;
+}
+
+.features__link {
+    position: relative;
+    font-weight: 800;
+    font-family: "Avenir";
+    padding: 0 20px;
+}
+
+ 
+.first__feature {
+    display: flex;
+    align-items: center;
+    width: 540px;
+    height: 500px;
+    background-image: url(../images/Rectangle\ 39.svg);
+    background-size: 90% 100%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 20px, right;
+    padding: 30px 0;
+    position: relative;
+}
+.figure1{
+    position: absolute;
+    left: 270px;
+    top: 110px
+}
+.figure2{
+    position: absolute;
+    top:150px;
+    left: 350px;
+
+}
+.figure3{
+    position: absolute;
+    right: 50px;
+    top: 320px;
+}
+.figure4{
+    position: absolute;
+    right:40px;
+    top:80px;
+}
+.figure5{
+    position: absolute;
+    left: 130px;
+    top:70px;
+}
+.figure6{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.second__feature {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 540px;
+    height: 500px;
+    background-image: url(../images/Rectangle\ 39\ копія.svg),
+                      url(../images/Vector\ 56\ копія.svg);
+    background-position: cover;
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: right 20px;
+    padding: 30px 0
+}
+
+
+.third__feature {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 540px;
+    height: 400px;
+    background-image: url(../images/Rectangle\ 39\ копія\ 2.svg);
+    background-position: cover;
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: right 20px;
+    padding: 30px 0
+}
+.forth__feature {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 540px;
+    height: 400px;
+    background-image: url(../images/Rectangle\ 39\ копія\ 3.svg);
+    background-position: cover;
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: right 20px;
+    padding: 30px 0
+}
+.feature__vector{
+    height: 11px;
+}
+.feature__polygon{
+    position: absolute;
+    right:12%;
+}
