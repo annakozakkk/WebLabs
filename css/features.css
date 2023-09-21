@@ -1,37 +1,36 @@
 .info {
     margin: 0 auto;
     text-align: center;
-    width: 584px;
+    width: 40rem;
 }
 
 .features>.container {
     margin-top: 160px;
-
 }
 
 .first__level {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 80rem;
 }
 
 .second__level {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 80rem;
 }
 
 .features__title {
     padding: 0px 20px;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
     margin: 0
 }
 
 .features__paragraph {
-    line-height: 25px;
+    line-height: 1.5em;
     font-family: "Avenir";
-    font-size: 16px;
+    font-size: 1em;
     padding: 30px 20px 40px 20px;
 }
 
@@ -56,8 +55,8 @@
 .first__feature {
     display: flex;
     align-items: center;
-    width: 540px;
-    height: 500px;
+    width: 35rem;
+    height: 31rem;
     background-image: url(../images/Rectangle\ 39.svg);
     background-size: 90% 100%, cover;
     background-repeat: no-repeat, no-repeat;
@@ -84,25 +83,25 @@
 .figure4{
     position: absolute;
     right:40px;
-    top:80px;
+    top:120px;
 }
 .figure5{
     position: absolute;
     left: 130px;
-    top:70px;
+    top:100px;
 }
 .figure6{
     position: absolute;
     right: 40px;
-    bottom: 40px;
+    bottom: 70px;
 }
 
 .second__feature {
     position: relative;
     display: flex;
     align-items: center;
-    width: 540px;
-    height: 500px;
+    width: 35rem;
+    height: 31rem;
     background-image: url(../images/Rectangle\ 39\ копія.svg),
                       url(../images/Vector\ 56\ копія.svg);
     background-position: cover;
@@ -117,8 +116,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 540px;
-    height: 400px;
+    width: 35rem;
+    height: 31rem;
     background-image: url(../images/Rectangle\ 39\ копія\ 2.svg);
     background-position: cover;
     background-size: 90% 100%;
@@ -130,8 +129,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 540px;
-    height: 400px;
+    width: 35rem;
+    height: 31rem;
     background-image: url(../images/Rectangle\ 39\ копія\ 3.svg);
     background-position: cover;
     background-size: 90% 100%;
@@ -145,4 +144,58 @@
 .feature__polygon{
     position: absolute;
     right:12%;
+}
+
+@media screen and (max-width:700px){
+    .features > .container{
+        margin-top: 0;
+    }
+    .info{
+        width: 20rem;
+        font-size: 0.9em;
+    }
+    .info > .title{
+        font-size: 2em;
+    }
+    .first__level{
+        width: 20rem;
+        flex-direction: column;
+        
+    }
+    .second__level{
+        width: 20rem;
+        flex-direction: column;
+        
+    }
+    .first__feature {
+        background: none;
+        width: 20rem;
+        height: 31rem; 
+    }
+    .features__inner{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+    }
+    .second__feature {
+        background: none;
+        width: 20rem;
+        height: 31rem; 
+    }
+   
+    .third__feature {
+        background: none;
+        width: 20rem;
+        height: 31rem; 
+    }
+    
+    .forth__feature {
+        background: none;
+        width: 20rem;
+        height: 31rem; 
+    }
+    .figure1, .figure2, .figure3, .figure4, .figure5, .figure6{
+        display: none;
+    }
 }

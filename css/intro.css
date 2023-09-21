@@ -16,7 +16,32 @@
 }
 
 .intro__inner {
-    width: 475px;
-    padding-right: 60px;
+    width: 30rem;
+ 
+}
+
+@media screen  and (max-width:700px){
+    .intro{
+        padding-top: 0;
+    }
+    .intro>.container{
+        margin-top: 0;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+        text-align: center;
+    }
+    .intro__img{
+        width: 20rem;
+        padding: 0;
+    }
+    .intro__inner{
+        width: 20rem;
+        font-size: 0.9em;
+    }
+    .intro__inner > .title{
+        font-size: 2em;
+    }
+    
 }
 
