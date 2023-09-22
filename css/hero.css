@@ -55,11 +55,19 @@
 }
 @media screen and (max-width:700px) {
     
+    .hero__container{
+        width: 100%;
+        padding: 0 15px;
+        padding-top: 100px;
+    }
      .hero__img{
       display: none;
      }
      .hero__inner{
-       text-align: center;
+        
+        padding-bottom: 70px;
+       
+        text-align: center;
        font-size: 0.9em;
      }
      .hero__heading{

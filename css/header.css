@@ -17,6 +17,7 @@
     display: flex;
     list-style-type: none;
     margin-left: 0;
+   
 }
 
 .header__nav-item {
@@ -69,30 +70,39 @@
    .header__nav {
       background: #e7ecff;
       position: fixed;
-      clip-path: circle(0 at top left);
+      clip-path: circle(0 at top left); */
       transition: clip-path 0.9s ease-in;}
 
-   .header__menu {
+    .header__menu {
         display: block;
       } 
-      .header__nav.open {
+    .header__nav.open {
         clip-path: circle(1000px at top);
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #e7ecff ;
+        margin-top: 60px;
       }
     
-      .header__nav ul {
+    .header__nav ul {
+        
         flex-direction: column;
-        height: 100%;
+         position: fixed;
+      
       }
     
-      .header__nav .header__nav-item {
+    .header__nav .header__nav-item {
         margin-right: 0;
-        padding-top: 10vh;
+        padding-top: 20px;
         flex: 1;
       }
     
-      .header__nav a {
+    .header__nav a {
         font-weight: 500;
         display: block;
-        font-size: 32px;
+        font-size: 30px;
       }
 }

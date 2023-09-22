@@ -1,8 +1,9 @@
 .footer {
-    border-top: 2px solid #9C69E2;
+    
     margin-top: 100px;
 }
 .footer__general {
+    border-top: 2px solid #9C69E2;
     padding-top: 70px;
     display: flex;
     align-items: center;
@@ -71,6 +72,13 @@
     font-size: 1em;
 }
 @media screen and (max-width:700px) {
+    .footer > .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    footer{
+        padding: 0 15px;
+    }
     .footer__general{
         display: flex;
         flex-direction: column;
@@ -84,9 +92,15 @@
         display: none;
     }
     .footer__info{
-        width: 20rem;
+        
     }
     .footer__req__demo__link{
         margin-top: 2rem;
+    }
+}
+@media  screen and (min-width: 2000px) {
+
+     .group{
+     display: none;
     }
 }

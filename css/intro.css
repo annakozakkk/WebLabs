@@ -25,6 +25,8 @@
         padding-top: 0;
     }
     .intro>.container{
+        width: 100%;
+        padding: 0 15px;
         margin-top: 0;
         flex-direction: column;
         background-color: white;

@@ -149,7 +149,11 @@
 @media screen and (max-width:700px){
     .features > .container{
         margin-top: 0;
+        width: 100%;
+        padding: 0 15px;
+
     }
+   
     .info{
         width: 20rem;
         font-size: 0.9em;
@@ -158,19 +162,23 @@
         font-size: 2em;
     }
     .first__level{
-        width: 20rem;
+       
+        width: 100%;
         flex-direction: column;
         
     }
     .second__level{
-        width: 20rem;
+       
+        width: 100%;
         flex-direction: column;
         
     }
     .first__feature {
-        background: none;
-        width: 20rem;
-        height: 31rem; 
+        background: rgba(104, 201, 186, 0.2); 
+
+        border-radius: 35px;
+        width: 100%;
+        height: 35rem; 
     }
     .features__inner{
         display: flex;
@@ -179,21 +187,29 @@
         justify-content: center;
     }
     .second__feature {
-        background: none;
-        width: 20rem;
-        height: 31rem; 
+        margin-top: 30px;
+        background: rgba(156, 105, 226, 0.2); 
+        border-radius: 35px;
+        width: 100%;
+        height: 32rem; 
     }
    
     .third__feature {
-        background: none;
-        width: 20rem;
-        height: 31rem; 
+        margin-top: 30px;
+        background: rgba(240, 99, 184, 0.2);
+        border-radius: 35px;
+        width: 100%;
+        height: 32rem; 
     }
     
     .forth__feature {
-        background: none;
-        width: 20rem;
-        height: 31rem; 
+        margin-top: 30px;
+        background: rgba(45, 156, 219, 0.2);
+
+        border-radius: 35px;
+        width: 100%;
+        height: 35rem;
+        
     }
     .figure1, .figure2, .figure3, .figure4, .figure5, .figure6{
         display: none;
