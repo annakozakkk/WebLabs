@@ -1,0 +1,217 @@
+.info {
+    margin: 0 auto;
+    text-align: center;
+    width: 40rem;
+}
+
+.features>.container {
+    margin-top: 160px;
+}
+
+.first__level {
+    display: flex;
+    justify-content: space-between;
+    width: 80rem;
+}
+
+.second__level {
+    display: flex;
+    justify-content: space-between;
+    width: 80rem;
+}
+
+.features__title {
+    padding: 0px 20px;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0
+}
+
+.features__paragraph {
+    line-height: 1.5em;
+    font-family: "Avenir";
+    font-size: 1em;
+    padding: 30px 20px 40px 20px;
+}
+
+.features__inner {
+    z-index:1 ;
+    margin-top: 60px;
+    display: flex;
+}
+
+.features__image {
+    margin-top: 50px;
+}
+
+.features__link {
+    position: relative;
+    font-weight: 800;
+    font-family: "Avenir";
+    padding: 0 20px;
+}
+
+ 
+.first__feature {
+    display: flex;
+    align-items: center;
+    width: 35rem;
+    height: 31rem;
+    background-image: url(../images/Rectangle\ 39.svg);
+    background-size: 90% 100%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 20px, right;
+    padding: 30px 0;
+    position: relative;
+}
+.figure1{
+    position: absolute;
+    left: 270px;
+    top: 110px
+}
+.figure2{
+    position: absolute;
+    top:150px;
+    left: 350px;
+
+}
+.figure3{
+    position: absolute;
+    right: 50px;
+    top: 320px;
+}
+.figure4{
+    position: absolute;
+    right:40px;
+    top:120px;
+}
+.figure5{
+    position: absolute;
+    left: 130px;
+    top:100px;
+}
+.figure6{
+    position: absolute;
+    right: 40px;
+    bottom: 70px;
+}
+
+.second__feature {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 35rem;
+    height: 31rem;
+    background-image: url(../images/Rectangle\ 39\ копія.svg),
+                      url(../images/Vector\ 56\ копія.svg);
+    background-position: cover;
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: right 20px;
+    padding: 30px 0
+}
+
+
+.third__feature {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 35rem;
+    height: 31rem;
+    background-image: url(../images/Rectangle\ 39\ копія\ 2.svg);
+    background-position: cover;
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: right 20px;
+    padding: 30px 0
+}
+.forth__feature {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 35rem;
+    height: 31rem;
+    background-image: url(../images/Rectangle\ 39\ копія\ 3.svg);
+    background-position: cover;
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: right 20px;
+    padding: 30px 0
+}
+.feature__vector{
+    height: 11px;
+}
+.feature__polygon{
+    position: absolute;
+    right:12%;
+}
+
+@media screen and (max-width:700px){
+    .features > .container{
+        margin-top: 0;
+        width: 100%;
+        padding: 0 15px;
+
+    }
+   
+    .info{
+        width: 20rem;
+        font-size: 0.9em;
+    }
+    .info > .title{
+        font-size: 2em;
+    }
+    .first__level{
+       
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .second__level{
+       
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .first__feature {
+        background: rgba(104, 201, 186, 0.2); 
+
+        border-radius: 35px;
+        width: 100%;
+        height: 35rem; 
+    }
+    .features__inner{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+    }
+    .second__feature {
+        margin-top: 30px;
+        background: rgba(156, 105, 226, 0.2); 
+        border-radius: 35px;
+        width: 100%;
+        height: 32rem; 
+    }
+   
+    .third__feature {
+        margin-top: 30px;
+        background: rgba(240, 99, 184, 0.2);
+        border-radius: 35px;
+        width: 100%;
+        height: 32rem; 
+    }
+    
+    .forth__feature {
+        margin-top: 30px;
+        background: rgba(45, 156, 219, 0.2);
+
+        border-radius: 35px;
+        width: 100%;
+        height: 35rem;
+        
+    }
+    .figure1, .figure2, .figure3, .figure4, .figure5, .figure6{
+        display: none;
+    }
+}

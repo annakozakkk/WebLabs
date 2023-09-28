@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,
+    initial-scale=1.0">
+    <title>Лаба 1</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+       <div class="container header-container">
+            <div class="header-imgs">
+                <img src="images/Rectangle 32.svg" alt="Rectangle1">
+                <img src="images/Rectangle 33.svg" alt="Rectangle2">
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link" href="">About</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link" href="">Help</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link" href="">Features</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link" href="">Signup</a>
+                    </li>
+            </nav>
+            <button class="req-demo">Request Demo</button>
+       </div>
+       <div class="container hero-container">
+             <div class="hero-inner">
+                 <h1 class="hero-heading">Save your data storage here.</h1>
+                 <p class="hero-info">Data Warehouse is a data storage area that has been
+                    tested for security, so you can store your data here
+                    safely but not be afraid of being stolen by others.</p>
+                    <button class="hero-button">Learn more</button>
+            </div>
+       </div>
+  </header>
+   
+  
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
