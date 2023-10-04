@@ -1,6 +1,6 @@
 .container{
     width:100%;
-    margin: 15px auto;
+    margin: 0 auto;
     height: auto;
 }
 .up{
@@ -11,19 +11,61 @@
 }
 .managing_container{
     height:auto ;
+    width: 25%;
 }
 .search_container{
-    border-right: 2px solid grey;
-    border-left: 2px solid grey;
+    margin-top: 0;
     height: auto;
     display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 0 15px;
+    width: auto;
+    justify-content: space-between;
+   background-color: rgb(207, 195, 195);
 }
+.main_container{
+    display: flex;
+}
+.search_ul{
+    display: flex;
+    list-style: none;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
 .search__block{
     height: 50px;
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: space-between}
 .search{
@@ -71,18 +113,25 @@
 ul{
     list-style: none;
 }
+.search_nav{
+    width: 30%;
+}
+.search_ul{
+    display: flex;
+    justify-content: space-between;
+}
+
 #items_container {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
 }
-#items_container_1{
-    height: auto;
-}
+
 #items_container > .item-bicycle{
     border: 2px solid #D54545;
 }
-li{
+.item-bicycle{
     border: 2px solid #4583d5;
     margin: 10px 0;
     padding: 10px;
@@ -180,3 +229,9 @@ li{
    
 }
 
+#Create_bicycle{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
