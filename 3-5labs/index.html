@@ -11,20 +11,16 @@
 </head>
 <body>
   
-    <div class="container">
+    
         <div class="search_container">
             <div class="tab">
-                <button class="tablinks" onclick="openNav(event, 'My_bicycles')">My bicycles</button>
-                <button class="tablinks" onclick="openNav(event, 'Create_bicycle')">Create bicyles</button>
+                <button class="tablinks" onclick="openNav(event, 'my_bicycle')">My bicycles</button>
+                <button class="tablinks" onclick="openNav(event, 'create_bicycle')">Create bicyles</button>
+              </div> 
+              <div id="my_bicycle">
+                   
               </div>
-              
-              <div id="My_bicycles" class="tabcontent">
-                <h3>London</h3>
-                <p>London is the capital city of England.</p>
-              </div>
-              
-              <div id="Create_bicycle" class="tabcontent">
-                <div class="create_container">
+              <div id="create_bicycle" class="tabcontent">
                     <div class="create_table">
                     <h2 class="create_title">Create bicycle</h2>
                     <div class="inputs">
@@ -47,8 +43,8 @@
                             <option value="road">road</option>
                         </select>
                     </div>
-                    <a id="submit_button" href="index.html">Submit</a>
-                </div>
+                    <a id="submit_button" href="">Submit</a>
+                    <span id="checkmark" style="display: none;"><img src="checkbox--checked.svg" alt=""></span>
                 </div>
               </div>
               
@@ -117,7 +113,7 @@
     </div>
 </div>
 </div>
-</div>
+
     <script src="js/script.js"></script>
    
 </body>

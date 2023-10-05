@@ -69,7 +69,7 @@ clearButton.addEventListener("click" ,()=>{
  renderItemsList(bicycles);
 }
 )
-//Це типу create
+
 const addItem = ({brand, maxSpeed,type,price})=>{
     const generatedId = uuid.v1();
 
@@ -84,20 +84,9 @@ const addItem = ({brand, maxSpeed,type,price})=>{
     bicycles.push(newItem)
     addItemToPage(newItem)
 }
-manageInput.addEventListener("change" ,()=>{
-    renderList(foundBicycles);
-})
-renderList(foundBicycles)
 
 
-countButton.addEventListener("click", ()=>{
-   const prices = foundBicycles.map(bicycle => bicycle.price);
-   const total = prices.reduce((accumulator,currentPrice)=> accumulator + currentPrice , 0);
-   
-   totalPrice.innerText = total;
-}
-)
-//Кожна едіт кнопка має айдішку
+
 const getItemId = (id) => `item-${id}`;
 const itemTemplate=({id,brand, maxSpeed,type,price}) =>
     `<li id ="${getItemId(id)}" class = "item-bicycle">
@@ -116,14 +105,32 @@ const addItemToPage = ({id,brand, maxSpeed,type,price})=>{
         itemTemplate({id,brand, maxSpeed,type,price})
     );
     const editButton = document.getElementById(`edit_button_${id}`);
-    editButton.addEventListener("click", ()=>{
+    editButton.onclick = function(){
         editContainer.style.display ="flex";
-        selectedItemID = id;
-        fillInputs({brand, maxSpeed,type,price});
-    })
-    
+        selectedItemID=id;
+        fillInputs({
+            brand,
+            maxSpeed,
+            type,
+            price
+        });
+    }
     
 };
+saveButton.onclick = function(){
+    let editedItem = bicycles.find(item => item.id === selectedItemID);
+    if(editedItem){
+        const {brand, maxSpeed,type,price} = getEditedInputItems();
+        editedItem.brand=brand,
+        editedItem.maxSpeed= maxSpeed,
+        editedItem.type = type,
+        editedItem.price= price
+    }
+    renderItemsList(bicycles);
+    editContainer.style.display="none";
+}
+
+
 const getEditedInputItems = ()=> {
     return {
 
@@ -134,37 +141,20 @@ const getEditedInputItems = ()=> {
     }
 }
     
-saveButton.addEventListener("click",()=>{
-  
 
-    if (selectedItemID !== null) {
-        const editedItem = bicycles.find((item) => item.id === selectedItemID);
-       
-        if(editedItem){
-            const {brand,maxSpeed,type,price} = getEditedInputItems();
-            editedItem.brand= brand,
-            editedItem.maxSpeed= maxSpeed,
-            editedItem.type = type,
-            editedItem.price= price
-        }
-        renderList(bicycles); 
-        editContainer.style.display = "none"; 
-        
-           
-        
-    
-    
-}})
+const checkmarkSpan = document.getElementById("checkmark");
 submitButton.addEventListener("click",(event)=>{
     event.preventDefault();
  
     const {brand, maxSpeed,type,price} = getInputValues();
     clearInputs();
     addItem({brand, maxSpeed,type,price});
-    create = document.getElementById("Create_bicycle");
-    create.style.display = "none"
+    checkmarkSpan.style.display="inline";
+    setTimeout(() => {
+        checkmarkSpan.style.display = "none";
+    }, 500); 
  })
- 
+
  
 
 const renderItemsList =(items)=>{
@@ -177,6 +167,13 @@ const renderItemsList =(items)=>{
 
 let foundBicycles=bicycles;
 
+countButton.addEventListener("click", ()=>{
+   const prices = foundBicycles.map(bicycle => bicycle.price);
+   const total = prices.reduce((accumulator,currentPrice)=> accumulator + currentPrice , 0);
+   
+   totalPrice.innerText = total;
+}
+)
 
 
 const addSortedItemToPage = ({id,brand, maxSpeed,type,price})=>{
@@ -216,6 +213,10 @@ const fillInputs =(item)=>{
     editPrice.value= item.price;
 
 }
+manageInput.addEventListener("change" ,()=>{
+    renderList(foundBicycles);
+})
+renderList(foundBicycles)
 
 function openNav(event, navName){
    
@@ -228,6 +229,6 @@ function openNav(event, navName){
    for (i = 0; i < tablinks.length; i++) {
      tablinks[i].className = tablinks[i].className.replace(" active", "");
    }
-   document.getElementById(navName).style.display = "block";
+   document.getElementById(navName).style.display = "flex";
    event.currentTarget.className += " active";
  }
