@@ -1,0 +1,40 @@
+
+body {
+    background: #fff;
+    font-family: Helvetica, sans-serif;
+    color: #212353;
+    
+}
+.container {
+    max-width:80rem;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #4B5D68;
+    font-family: "Avenir";
+}
+
+button {
+    border: none;
+    font-family: "Avenir";
+
+}
+
+
+.title {
+    font-size: 3em;
+}
+
+.paragraph {
+    font-family: "Avenir";
+    line-height: 30px;
+}
+@media screen and (min-width:2000px) {
+    .container {
+        max-width:80rem;
+        margin: 0 auto;
+    }
+  
+    
+}
