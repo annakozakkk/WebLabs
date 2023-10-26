@@ -14,13 +14,13 @@
     
         <div class="search_container">
             <div class="tab">
-                <button class="tablinks" onclick="openNav(event, 'my_bicycle')">My bicycles</button>
-                <button class="tablinks" onclick="openNav(event, 'create_bicycle')">Create bicyles</button>
+                <button class="tablinks" id="my_bicycle_button">My bicycles</button>
+                <button class="tablinks" id="create_button">Create bicyles</button>
               </div> 
               <div id="my_bicycle">
                    
               </div>
-              <div id="create_bicycle" class="tabcontent">
+              <div id="create_bicycle" class="tabcontent" style="display: none;">
                     <div class="create_table">
                     <h2 class="create_title">Create bicycle</h2>
                     <div class="inputs">
@@ -114,6 +114,11 @@
 </div>
 </div>
 
-    <script src="js/script.js"></script>
+<script type="module" src="js/script.js">
+ 
+
+</script>
+
+    
    
 </body>
