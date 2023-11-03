@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device,initial-scale=1.0">
+    <title>Lab3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+</head>
+<body>
+  
+    
+        <div class="search_container">
+            <div class="tab">
+                <button class="tablinks" id="my_bicycle_button">My bicycles</button>
+                <button class="tablinks" id="create_button">Create bicyles</button>
+              </div> 
+              <div id="my_bicycle">
+                   
+              </div>
+              <div id="create_bicycle" class="tabcontent" style="display: none;">
+                    <div class="create_table">
+                    <h2 class="create_title">Create bicycle</h2>
+                    <div class="inputs">
+                        <label for="create_input">Brand</label>
+                        <input id="create_input" class="create_input" type="text" placeholder="Text...">
+                    </div>
+                    <div class="inputs">
+                        <label for="max_speed">Max speed</label>
+                       <input type="number" id="max_speed">
+                    </div>
+                    <div class="inputs">
+                        <label for="price">Price($)</label>
+                        <input type="number" id="price">
+                    </div>
+                   
+                    <div class="inputs">
+                        <label for="bicycle_type">Bicycle type</label>
+                        <select  name="" id="bicycle_type" aria-placeholder="Select type">
+                            <option value="mountain">mountain</option>
+                            <option value="road">road</option>
+                        </select>
+                    </div>
+                    <a id="submit_button" href="">Submit</a>
+                    <span id="checkmark" style="display: none;"><img src="checkbox--checked.svg" alt=""></span>
+                </div>
+              </div>
+              
+            <div class="search__block">
+                <h3 class="search_text">Search for your bicycle here</h3>
+                <div class="search">
+                 <input class="search__input" id="search__input" type="text" placeholder="Search here...">
+                 <button class="search_button" id="search_button">Search</button>
+                 <button class="clear_button" id="clear_button">Clear</button>
+                </div>
+            </div>
+            </div>
+            <div class="main_container">
+    <div class="managing_container">
+    <div class="managing">
+        <div class="managing__header">
+        <h3 class="managing__header">MANAGE BICYCLES</h3>
+    </div>
+       <label for="managing_input">Sort by the fastest bicycle</label>
+       <input type="checkbox" id="managing_input">
+
+    </div>
+    <div class="counting">
+        <h3 class="count_title">COUNT TOTAL PRICE</h3>
+        <button class="count_button" id="count_button">Count</button>
+        <div class="total-price">
+            <div class="label">Total price</div>
+            <div class="dollars"><sup>$</sup><span id="total_price">0</span></div>
+       </div>
+    </div>
+  
+</div>
+
+  
+
+    <ul id="items_container" >
+    </ul>
+</div>
+
+ <div class="create_edit">
+
+<div class="edit_container" id="edit_container" style="display: none;">
+    <div class="edit_table">
+        <h2 class="edit_title">Edit bicycle</h2>
+        <div class="inputs">
+            <label for="edit_input">Brand</label>
+            <input id="edit_input" class="edit_input" type="text" placeholder="Text...">
+        </div>
+        <div class="inputs">
+            <label for="edit_max_speed">Max speed</label>
+           <input type="number" id="edit_max_speed">
+        </div>
+        <div class="inputs">
+            <label for="edit_price">Price($)</label>
+            <input type="number" id="edit_price">
+        </div>
+       
+        <div class="inputs">
+            <label for="edit_bicycle_type">Bicycle type</label>
+            <select  name="" id="edit_bicycle_type" aria-placeholder="Select type">
+                <option value="mountain">mountain</option>
+                <option value="road">road</option>
+            </select>
+        </div>
+        <button class="save_button" id="save_button">Save</button>
+    </div>
+</div>
+</div>
+
+<script type="module" src="js/script.js">
+ 
+
+</script>
+
+    
+   
+</body>
