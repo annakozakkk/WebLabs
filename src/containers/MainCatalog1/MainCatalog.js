@@ -15,12 +15,15 @@ const MainCatalog = ({ filters, bicyclesList }) => {
         setFiltersApplied(true)
   }
   useEffect(() => {
-   
+    setIsLoading(true)
     const fetchFilteredBicycles = async () => {
       try {
         const result = await getFilteredBicycles(filters);
+        setIsLoading(false);
         setFilteredBicycles(result);
+       
         setFiltersApplied(false)
+       
       } catch (error) {
         console.error("Error fetching filtered bicycles:", error);
       }
@@ -42,7 +45,7 @@ const MainCatalog = ({ filters, bicyclesList }) => {
       </div>
    
     <CardWrapper>  
-      {isLoading ?<Loader/>:""}
+    {isLoading ?<Loader/>:""}
       {filteredBicycles.map((bicycle) => (
         <CardItem
           id={bicycle.id}
@@ -54,6 +57,7 @@ const MainCatalog = ({ filters, bicyclesList }) => {
         />
       ))}
     </CardWrapper>
+   
     </div>
   );
 };

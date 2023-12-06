@@ -2,14 +2,16 @@ import React from "react";
 
 import {Card,Button} from "antd";
 import {Footer} from "./CardItem.styled"
-import {Link } from "react-router-dom";
+import {Link, useParams } from "react-router-dom";
 
 
 const { Meta } = Card; 
 const BICYCLE = "/bicycle/";
 const CardItem = (props) =>{
-
+    
     return(
+    
+
     <Card
         hoverable 
         cover = {

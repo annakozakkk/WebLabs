@@ -4,6 +4,7 @@ import MainCatalog from "../MainCatalog1/MainCatalog";
 import { useEffect } from "react";
 import { getBicycles } from "../../service/api";
 import { Button } from "antd";
+import HeaderCatalog from "./HeaderCatalog";
 
 const Catalog = ()=>{
       const [bicycles,setBicycles ] = useState([]);
@@ -23,6 +24,7 @@ const Catalog = ()=>{
      
       return(
             <div>
+                 <HeaderCatalog/>
                  <Filter filters={filters} handleApplyFilter = {handleApplyFilter}/> 
                  <MainCatalog filters={filters} bicyclesList ={bicycles} />
             </div>

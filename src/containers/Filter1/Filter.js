@@ -4,7 +4,7 @@ import Select from "./Select"
 import SearchInput from "../Search/SearchInput";
 import { Button } from "antd";
 const Filter = ({filters,handleApplyFilter}) =>{
-    const [filterApply,setFilterApply] = useState(false)
+   
 
 
     const onFilterValueChanged= (event) =>{

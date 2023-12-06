@@ -13,6 +13,7 @@ import { Button } from "antd";
 import CardItem from "../../components/CardItem";
 import { getBicycles } from "../../service/api";
 import Loader from "../Loader/Loader";
+import HomeHeader from '../Home/HomeHeader';
 
 const homeText = {
   text:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -48,6 +49,7 @@ const Home = () =>{
    
     return(
         <div>
+          <HomeHeader/>
             <MainWrapper >
                 <StyledText>
                   <p>{homeText.text}</p>
